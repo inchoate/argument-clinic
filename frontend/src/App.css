@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes:
+    retro --default,
+    dark --prefersdark;
+}
+
+/* Monty Python Whimsical Animations */
+@keyframes silly-wobble {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.5deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-0.5deg) scale(0.98);
+  }
+}
+
+@keyframes parrot-bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px) rotate(1deg);
+  }
+}
+
+.silly-wobble:hover {
+  animation: silly-wobble 2s ease-in-out infinite;
+}
+
+.parrot-bounce {
+  animation: parrot-bounce 3s ease-in-out infinite;
+}
+
+/* Subtle color shift for British whimsy */
+.british-hover:hover {
+  filter: hue-rotate(15deg) brightness(1.05);
+  transition: filter 0.3s ease;
+}
+
+/* Silly shake for errors */
+@keyframes error-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px) rotate(-0.5deg);
+  }
+  75% {
+    transform: translateX(2px) rotate(0.5deg);
+  }
+}
+
+.error-shake {
+  animation: error-shake 0.5s ease-in-out;
+}

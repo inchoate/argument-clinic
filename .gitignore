@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.mcp.json
+.venv/
+.env
+.env*
+.mypy_cache/
+.pytest_cache/
+.pdm-python
+.pdm-build/
+.ruff_cache/
+.pytype/
+.pyre/
+.ipynb_checkpoints/
+__pypackages__/
+
+# Node.js
+node_modules/
+npm-debug.log
+
+# Build/Dist
+build/
+dist/
+coverage/
+
+# Editor/IDE
+.vscode/
+.idea/
+.DS_Store
+.cursorignore
+.cursorindexingignore
+
+# Project-specific
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+.streamlit/secrets.toml
